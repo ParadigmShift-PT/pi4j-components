@@ -1,0 +1,41 @@
+pi4j-components
+===============
+
+This artifact is a vendored copy of third-party Apache-2.0-licensed code,
+repackaged under ParadigmShift Maven coordinates so it can be consumed from
+the ParadigmShift Maven repository (https://maven.paradigmshift.pt) without
+depending on third-party hosts that may become unavailable.
+
+LICENSE
+
+The Apache License, Version 2.0 of the original work applies in full and is
+reproduced verbatim in the LICENSE file. ParadigmShift makes no additional
+licensing claim over this code.
+
+PROVENANCE
+
+  Pi4J project
+    https://pi4j.com
+    https://github.com/Pi4J
+    Pi4J is a Java I/O library for Raspberry Pi maintained by the Pi4J project.
+
+  pi4j-components (upstream of this fork)
+    Originally extracted from the Pi4J example applications
+    (https://github.com/Pi4J/pi4j-example-components, related repos under
+    the Pi4J GitHub organisation). Provides reusable component wrappers —
+    LEDs, buttons, joysticks, servos, ADCs, LCD displays, GPS, etc. —
+    around the core pi4j-core API.
+
+  Repackaged for the ParadigmShift ecosystem
+    pt.paradigmshift.iot:pi4j-components
+    https://www.paradigmshift.pt
+    Maven coordinates and build / release plumbing changed; package paths
+    (com.pi4j.catalog.*) are unchanged so existing consumers can switch by
+    editing their pom.xml only. The unused picocli dependency and its
+    annotation processor, plus the maven-dependency-plugin distribution
+    bundling, were removed because this artifact is published as a library
+    and not a runnable application.
+
+The Apache 2.0 licence requires the LICENSE file and any NOTICE file from
+the original work to be preserved. The original LICENSE is preserved
+verbatim. There was no upstream NOTICE file to merge into this one.
