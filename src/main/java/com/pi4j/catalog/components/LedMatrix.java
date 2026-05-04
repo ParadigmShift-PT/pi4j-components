@@ -29,7 +29,6 @@ public class LedMatrix extends Component {
      * @param pi4j       Pi4J context
      * @param rows       How many rows of LED
      * @param columns    How many columns of LED
-     * @param brightness How bright the LEDs can be at max, Range 0 - 1
      */
     public LedMatrix(Context pi4j, int rows, int columns) {
         this.rows = rows;
